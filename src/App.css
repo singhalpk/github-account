@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  overflow-x: hidden;
 }
 
 .App-logo {
@@ -7,6 +8,68 @@
   height: 40vmin;
   pointer-events: none;
 }
+
+.cardimg{
+      padding-left: 0px;
+    padding-right: 0px;
+    border: 1px solid #e1e4e8;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.ActiveTab{
+    border-bottom: 2px solid transparent;
+    border-bottom-color: #e36209;
+}
+.TabTitle{
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+.userName{
+  color: #666;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.btn {
+    -moz-appearance: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-appearance: none;
+    -webkit-user-select: none;
+    appearance: none;
+    background-color: #eff3f6;
+    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
+    color: #24292e; 
+    background-position: -1px -1px;
+    background-repeat: repeat-x;
+    background-size: 110% 110%;
+    border: 1px solid rgba(27,31,35,.2);
+    border-radius: .25em;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 6px 12px;
+    position: relative;
+    user-select: none;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+
+.repoName{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    color: #007bff;
+}
+
 
 .App-header {
   background-color: #282c34;
