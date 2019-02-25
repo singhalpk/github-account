@@ -20,9 +20,9 @@ class Dashboard extends React.Component {
 
   render() {
     return (
-    	<div>
-    		<div className="row" style={{marginTop:"30px"}}>
-	    		<div className="col-md-3 offset-md-1">
+    	<div className="container">
+    		<div className="row" >
+	    		<div className="col-md-3 offset-md-1 mt-5">
 	    			 <div className="cardimg col-md-9" >
 					    <img className="card-img-top" style={{paddingBottom:"50px"}} src={sessionStorage.getItem('image')} alt=" " />
 					  </div>
@@ -33,8 +33,8 @@ class Dashboard extends React.Component {
 					  	<button type="button" className="col-md-12 btn mt-5" onClick={this.logout} >Log Out</button>
 					  </div>
 	    		</div>
-	    		<div className="col-md-7">
-				 	  <div className="list-inline row col-md-9 mb-3" style={{justifyContent:"space-between"}}>
+	    		<div className="col-md-8 mt-5">
+				 	  <div className="list-inline row col-md-6 mb-3" style={{justifyContent:"space-between"}}>
 					    <div className= { this.state.torepositories ? "Title ActiveTab" : "Title" } onClick={this.repositories}>
 					    	<h2 className="TabTitle" >Repositories</h2>
 					    </div>

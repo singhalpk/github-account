@@ -1,12 +1,22 @@
 .App {
   text-align: center;
-  overflow-x: hidden;
 }
-
+.container {
+    width: 100%;
+     padding-right: 0; 
+     padding-left: 0; 
+     margin-right: 0; 
+     margin-left: 15px; 
+}
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+}
+.loginback{
+  background-image: url(./img/background.svg );
+  background-repeat: no-repeat;
+  background-size: cover
 }
 
 .cardimg{
@@ -25,6 +35,8 @@
 .TabTitle{
   padding-bottom: 5px;
   cursor: pointer;
+  font-size: larger;
+  font-weight: 600;
 }
 .userName{
   color: #666;
@@ -35,18 +47,8 @@
 }
 
 .btn {
-    -moz-appearance: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-appearance: none;
-    -webkit-user-select: none;
-    appearance: none;
     background-color: #eff3f6;
-    background-image: linear-gradient(-180deg,#fafbfc,#eff3f6 90%);
     color: #24292e; 
-    background-position: -1px -1px;
-    background-repeat: repeat-x;
-    background-size: 110% 110%;
     border: 1px solid rgba(27,31,35,.2);
     border-radius: .25em;
     cursor: pointer;
@@ -55,10 +57,7 @@
     font-weight: 600;
     line-height: 20px;
     padding: 6px 12px;
-    position: relative;
-    user-select: none;
-    vertical-align: middle;
-    white-space: nowrap;
+    margin: 0;
 }
 
 
@@ -92,5 +91,13 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media screen and (max-width: 992px) {
+ .loginback{
+    background-image: none;
+    background-repeat: no-repeat;
+    background-size: cover
   }
 }

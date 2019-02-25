@@ -1,5 +1,4 @@
 import React from "react";
-import Background from '../img/background.svg';
 import emoji from '../img/emoji.png';
 import "./login.css";
 
@@ -8,7 +7,7 @@ class NotFound extends React.Component {
  
   render() {
     return (
-     <div className="containerHeight view full-page-intro" style={{backgroundImage: "url(" + Background + ")", backgroundRepeat: "no-repeat", backgroundSize: "cover"}}>
+     <div className="containerHeight view full-page-intro loginback">
         <div className="mask d-flex justify-content-center align-items-center">
           <div className="container">
             <div className="row wow fadeIn">
